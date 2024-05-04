@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: #fffafa;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -10,16 +11,16 @@ body, html {
     height: 100vh;
 }
 
-.esquerda {
+.left {
     flex: 1;
     background-color: #fffafa;
-    color: white;
+    color: #fffafa;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.direita {
+.right {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -27,7 +28,7 @@ body, html {
     padding: 20px;
 }
 
-.formulario {
+.form {
     max-width: 400px;
     background-color: #f17821;
     padding: 20px;
@@ -35,16 +36,16 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-.formulario h1 {
+.form h1 {
     text-align: center;
 }
 
-.formulario label {
+.form label {
     display: block;
     margin-bottom: 10px;
 }
 
-.formulario input {
+.form input {
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
@@ -53,14 +54,25 @@ body, html {
     cursor: pointer;
     transition: background-color 0.3s;
     background-color: #fffafa;
-    
 }
 
-.formulario input:hover{
+.form input:hover{
     background-color: #ccc;
 }
 
-.formulario button {
+.form a.link{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.forml a.link:hover{
+    text-decoration: underline;
+    color: #555;
+   }
+
+.form button {
     width: 35%;
     padding: 10px;
     border: none;
@@ -70,8 +82,69 @@ body, html {
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
-.formulario button:hover {
+.form button:hover {
     background-color: #555;
+}
+
+.nav {
+    background-color: #f17821;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav img {
+    width: 75px;
+    height: auto;
+}
+
+.nav h2 {
+    color: #000;
+    margin-left: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-left: 20px;
+    color: #000; 
+}
+
+.nav ul li:first-child {
+    margin-left: 25px;
+}
+
+.nav ul li:last-child {
+    margin-right: 25px;
+}
+
+.nav img{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.nav ul li .textbuttom{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav ul li .textbuttom:hover{
+ text-decoration: underline;
+ color: #555;
 }
