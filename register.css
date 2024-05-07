@@ -12,16 +12,17 @@ body, html {
 }
 
 .left {
-    flex: 1;
-    background-color: #fffafa;
-    color: #fffafa;
+    flex: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .right {
     flex: 1;
+    background-color: #fffafa;
+    color: #fffafa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,54 +30,43 @@ body, html {
 }
 
 .form {
-    width: 400px;
+    width: 350px;
     background-color: #f17821;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.form h1, h3 {
+.form h1 {
     text-align: center;
 }
 
 .form label {
     display: block;
-    margin-bottom: auto;
+    margin-bottom: 10px;
+}
+
+.form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 .form input {
-    width: 250px;
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 0.5px solid #fffafa;
+    margin-bottom: 15px;
+    border: 1px solid #fffafa;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     background-color: #fffafa;
 }
 
-.form input:hover{
+.form input:hover {
     background-color: #ccc;
 }
-
-.form a.link{
-    background-color: transparent;
-    border: none;
-    color: #000;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.forml a.link:hover{
-    text-decoration: underline;
-    color: #555;
-   }
 
 .form button {
     width: 35%;
@@ -88,7 +78,7 @@ body, html {
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,12 +130,12 @@ body, html {
     margin-right: 25px;
 }
 
-.nav img{
+.nav img {
     margin-left: 35px;
     margin-right: 35px;
 }
 
-.nav ul li .textbuttom{
+.nav ul li .textbuttom {
     background-color: transparent;
     border: none;
     color: #000;
@@ -153,7 +143,7 @@ body, html {
     transition: background-color 0.3s;
 }
 
-.nav ul li .textbuttom:hover{
- text-decoration: underline;
- color: #555;
+.nav ul li .textbuttom:hover {
+    text-decoration: underline;
+    color: #555;
 }
